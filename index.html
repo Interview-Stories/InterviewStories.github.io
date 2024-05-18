@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="resources\css\styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Interview Stories ✨</title>
+  </head>
+  <body>
+    <h1 class="home-heading">Interview Stories</h1>
+    <center>
+      <p class="home-desc">
+        Interview experiences - by the students, for the students!
+      </p>
+      <h2>Master's Degree Admission Interviews</h2>
+      <div class="grid-container">
+        <div class="card">
+          <a href="iisc.html">
+            <img
+              src="resources\images\iisc2.jpg"
+              alt="iisc logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">IISc Bangalore</p>
+        </div>
+        <div class="card">
+          <a href="iitb.html ">
+            <img
+              src="resources\images\iitb.png"
+              alt="iitb logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">IIT Bombay</p>
+        </div>
+        <div class="card">
+          <a href="iitd.html ">
+            <img
+              src="resources\images\iitd.png"
+              alt="iitd logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">IIT Delhi</p>
+        </div>
+        <div class="card">
+          <a href="iitkgp.html ">
+            <img
+              src="resources\images\iitkgp.png"
+              alt="iitkgp logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">IIT Kharagpur</p>
+        </div>
+        <div class="card">
+          <a href="iith.html ">
+            <img
+              src="resources\images\iith.jpg"
+              alt="iith logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">IIT Hyderabad</p>
+        </div>
+      </div>
+
+      <h2>Government Job Interviews</h2>
+      <div class="grid-container">
+        <div class="card">
+          <a href="barc.html">
+            <img
+              src="resources\images\barc.png"
+              alt="BARC logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">BARC</p>
+        </div>
+        <div class="card">
+          <a href="drdo.html">
+            <img
+              src="resources\images\drdo.png"
+              alt="DRDO logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">DRDO</p>
+        </div>
+        <div class="card">
+          <a href="drdo.html">
+            <img
+              src="resources\images\isro.png"
+              alt="ISRO logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">ISRO</p>
+        </div>
+        <div class="card">
+          <a href="drdo.html">
+            <img
+              src="resources\images\npcil.png"
+              alt="NPCIL logo"
+              class="logos"
+              height="150px"
+              width="150px"
+            />
+          </a>
+          <p class="logo-desc">NPCIL</p>
+        </div>
+      </div>
+      <h2>Want to share YOUR Interview Story with us?</h2>
+    </center>
+    <form
+      class="form-label"
+      action="https://formspree.io/f/xjvnzqly"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          id="full-name"
+          placeholder="First and Last"
+          required=""
+        />
+        <br />
+        <label for="email-address">Email Address</label>
+        <input
+          type="email"
+          name="_replyto"
+          id="email-address"
+          placeholder="your-email@domain.com"
+          required=""
+        />
+        <br />
+        <label for="org">Interviewing Body</label>
+        <input
+          type="text"
+          name="organisation"
+          id="org"
+          placeholder="IISc Bangalore, DRDO, etc."
+          required=""
+        />
+        <br />
+        <label for="deg-spec">Degree & Specialization</label>
+        <input
+          type="text"
+          name="degree-and-specialization"
+          id="degree-specialization"
+          placeholder="M.Tech. in ICS   /   M.S. in ECE   /   Job"
+          required=""
+        />
+        <br />
+        <label for="date">Interview Date</label>
+        <input
+          type="date"
+          name="interview-date"
+          id="iv-date"
+          placeholder="31/05/2024"
+        />
+        <br />
+        <label for="message">Interview Experience</label>
+        <textarea
+          rows="5"
+          name="message"
+          id="message"
+          placeholder="Please share with us the questions asked"
+          required=""
+        ></textarea>
+        <br />
+        <input
+          type="hidden"
+          name="_subject"
+          id="email-subject"
+          value="Department Contact Form Submission"
+        />
+        <br />
+        <label>
+          Upload file with Questions
+          <input type="file" name="upload" />
+        </label>
+      </fieldset>
+      <center>
+        <input type="submit" value="Submit Your Experience" />
+      </center>
+    </form>
+  </body>
+</html>
