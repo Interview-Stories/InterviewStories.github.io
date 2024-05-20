@@ -1,19 +1,38 @@
-@font-face {
-    font-family: "Lora";
-    src: url(resources/fonts/Lora-VariableFont_wght.ttf);
+/* @font-face {
+    font-family: 'playfair';
+    src: url('resources\fonts\Playfair_Display\static\PlayfairDisplay-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'majormono';
+    src: url('resources\fonts\Major_Mono_Display\MajorMonoDisplay-Regular.ttf') format('truetype');
+} */
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    background-color: rgb(241, 241, 251);
+}
+
 
 h1 {
     text-align: center;
     margin-bottom: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0px;
+    /* font-family: 'majormono'; */
+    font-size: 50px;
+    padding: 10px 16px;
+    background: #454555;
+    color: white;
 }
 
 p.home-desc {
     text-align: center;
     margin-bottom: 20px;
-    font-size: lar;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-family: 'playfair'
 }
 
 h2 {
@@ -39,17 +58,20 @@ footer {
     text-align: center;
 }
 
+.logo-desc {
+    margin: 20px;
+}
+
 
 /* Grow Shadow effect */
 .card {
     background-color: white;
-    margin: 10px;
+    margin: 25px 20px;
     padding: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     height: 150px;
     width: 150px;
-    margin-bottom: 5px;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -69,14 +91,9 @@ footer {
     transform: scale(1.1);
 }
 
-.form-label {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 input[type=text],
 input[type=email],
-input[type=file],
-input[type=date],
 select,
 textarea {
     width: 100%;
@@ -91,26 +108,57 @@ textarea {
     /* Make sure that padding and width stays in place */
     margin-top: 6px;
     /* Add a top margin */
-    margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
         /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+input[type=date] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 0px solid;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 6px;
+}
+
+input[type=file] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid rgb(76, 112, 218);
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 6px;
+}
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: rgb(112, 140, 224);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 10px;
+    margin-top: 5px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgb(147, 167, 228);
 }
 
 /* Add a background color and some padding around the form */
@@ -120,11 +168,44 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+.form-label {
+    font-family: 'playfair';
+    width: 100%;
+}
 
 fieldset {
-    background-color: rgb(242, 231, 221);
+    font-family: 'playfair';
+    background-color: #f6f0ea;
     border-width: 0px;
-    width: 800px;
-    margin: auto;
-    text-align: center;
+    margin-inline: 400px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 50px 40px;
+    color: black;
+    background: rgb(205, 212, 233);
+    border-radius: 10px;
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+        0 1px 1px rgba(128, 128, 128, 0.155),
+        0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+        0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+        0 12px 12px rgba(128, 128, 128, 0.35);
 }
+
+field-label {
+    text-align: left;
+}
+
+p.submit-note {
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ---------------------------- */

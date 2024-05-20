@@ -7,11 +7,11 @@
     <title>✨ Interview Stories ✨</title>
   </head>
   <body>
-    <h1 class="home-heading">Interview Stories</h1>
+    <div>
+      <h1 class="home-heading">Interview Stories</h1>
+    </div>
+    <p class="home-desc">By the students, for the students!</p>
     <center>
-      <p class="home-desc">
-        Interview experiences - by the students, for the students!
-      </p>
       <h2>Master's Degree Admission Interviews</h2>
       <div class="grid-container">
         <div class="card">
@@ -129,6 +129,7 @@
       </div>
       <h2>Want to share YOUR Interview Story with us?</h2>
     </center>
+    <!-- Here is my previous form -->
     <form
       class="form-label"
       action="https://formspree.io/f/xjvnzqly"
@@ -145,7 +146,7 @@
           required=""
         />
         <br />
-        <label for="email-address">Email Address</label>
+        <label class="field-label" for="email-address">Email Address</label>
         <input
           type="email"
           name="_replyto"
@@ -163,12 +164,12 @@
           required=""
         />
         <br />
-        <label for="deg-spec">Degree & Specialization</label>
+        <label for="deg-spec">Degree & Specialization / Job Position</label>
         <input
           type="text"
           name="degree-and-specialization"
           id="degree-specialization"
-          placeholder="M.Tech. in ICS   /   M.S. in ECE   /   Job"
+          placeholder="M.Tech. in ICS   /   M.S. in ECE   /   Scientist-C"
           required=""
         />
         <br />
@@ -182,7 +183,7 @@
         <br />
         <label for="message">Interview Experience</label>
         <textarea
-          rows="5"
+          rows="10"
           name="message"
           id="message"
           placeholder="Please share with us the questions asked"
@@ -196,14 +197,18 @@
           value="Department Contact Form Submission"
         />
         <br />
-        <label>
-          Upload file with Questions
-          <input type="file" name="upload" />
-        </label>
+        <label> Upload file with Questions</label>
+        <input type="file" name="upload" />
+        <br />
+        <center>
+          <input type="submit" value="Submit Your Experience" />
+        </center>
+        <p class="submit-note">
+          <strong>Note: </strong> Each submission will be manually verified
+          before uploading on the website. Providing false or misleading
+          information may result in your submission being rejected.
+        </p>
       </fieldset>
-      <center>
-        <input type="submit" value="Submit Your Experience" />
-      </center>
     </form>
   </body>
 </html>
